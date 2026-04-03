@@ -33,10 +33,8 @@ int main() {
         printf("Queue Number (1=RR, 2=FCFS): ");
         scanf("%d", &p[i].qno);
 
-        p[i].rt = p[i].bt; // remaining time
+        p[i].rt = p[i].bt;
     }
-
-    // -------- Scheduling --------
     while (completed < n) {
         int executed = 0;
         for (i = 0; i < n; i++) {
